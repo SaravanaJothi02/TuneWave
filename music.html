@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneWave</title>
+    <link rel="icon" href="./images/tone.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadCurrentIndex()">
+    <h1>TuneWave</h1>
+    <div id="wrapper">
+        <div id="previous">
+            <img src="./images/previous.png" alt="" class="icon" onclick="playPrevious()">
+        </div>
+        <div id="songcard">
+            <div class="songImageCard">
+                <img src="./images/Jersey-Tamil-2019-20190215-500x500.jpg" alt="" id="songImage">
+            </div>
+            <div id="songmetadata">
+                <marquee behavior="" direction="left">
+                    <p id="songName"></p>
+                    <p id="artistname"></p>1
+                </marquee>
+            </div>
+            <div>
+                <audio src="./songs/Marakkavillayae-MassTamilan.org.mp3" id="song"></audio>
+            </div>
+            <div id="progressbar">
+                <div>
+                    <label for="" id="currentTime"></label>
+                </div>
+                <div>
+                    <input type="range" value="0" id="progress">
+                </div>
+                <div>
+                    <label for="" id="duration"></label>
+                </div>
+            </div>
+           
+            <div id="controls">
+                    <img src="./images/play-button.png" alt="" id="play" class="icon" onclick="playsong()">
+                
+                    <img src="./images/heart.png" alt="" id="heart" class="icon">
+            </div>
+        </div>
+        <div id="next">
+            <img src="./images/next.png" alt="" class="icon" onclick="playNext()">
+        </div>
+    </div>
+   <script src="music.js">
+    
+   </script>
+</body>
+</html>
